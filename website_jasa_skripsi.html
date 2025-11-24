@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Pembuatan Skripsi & Buku</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #2255ff, #ff2a2a);
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: #e8eefc;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #2255ff;
+        }
+        footer {
+            margin-top: 40px;
+            background: #333;
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+        .contact {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jasa Pembuatan Skripsi, Tugas Kuliah, Penurunan Plagiasi & Pembuatan Buku</h1>
+        <p>Profesional • Cepat • Bergaransi</p>
+    </header>
+
+    <nav>
+        <a href="#layanan">Layanan</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- Tombol WA Otomatis -->
+    <div style="text-align:center; margin-top:20px;">
+        <a href="https://wa.me/62895383070552?text=Halo%20saya%20ingin%20konsultasi" target="_blank" style="background:#25D366; padding:12px 22px; color:white; border-radius:8px; text-decoration:none; font-size:18px; font-weight:bold; display:inline-block; animation:pulse 1.6s infinite;">Chat WhatsApp Sekarang</a>
+    </div>
+
+    <section class="hero">
+        <h1>Bingung Kerjakan Skripsi atau Tugas?</h1>
+        <p>Kami siap membantu dengan hasil terbaik dan kerahasiaan terjamin.</p>
+    </section>
+
+    <!-- Form Pemesanan -->
+    <div class="container" id="form">
+        <h2>Form Pemesanan</h2>
+        <div class="card">
+            <form action="https://wa.me/62895383070552" method="get" onsubmit="return sendWA()">
+                <label>Nama Lengkap:</label><br>
+                <input type="text" id="nama" required style="width:100%; padding:10px; margin:8px 0; border-radius:6px; border:1px solid #ccc;"><br>
+
+                <label>Jenis Layanan:</label><br>
+                <select id="layananSelect" required style="width:100%; padding:10px; margin:8px 0; border-radius:6px; border:1px solid #ccc;">
+                    <option value="Pembuatan Skripsi">Pembuatan Skripsi</option>
+                    <option value="Tugas Kuliah">Tugas Kuliah</option>
+                    <option value="Penurunan Plagiasi">Penurunan Plagiasi</option>
+                    <option value="Pembuatan Buku">Pembuatan Buku</option>
+                </select><br>
+
+                <label>Deskripsi Kebutuhan:</label><br>
+                <textarea id="deskripsi" rows="4" required style="width:100%; padding:10px; margin:8px 0; border-radius:6px; border:1px solid #ccc;"></textarea><br>
+
+                <button type="submit" style="background:#2255ff; color:white; padding:12px 20px; border:none; border-radius:8px; cursor:pointer; font-size:16px; animation:slideUp 0.8s ease-out;">Kirim ke WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function sendWA() {
+            const nama = document.getElementById('nama').value;
+            const layanan = document.getElementById('layananSelect').value;
+            const desk = document.getElementById('deskripsi').value;
+            const url = `https://wa.me/62895383070552?text=Halo,%20nama%20saya%20${nama}.%0ASaya%20ingin%20memesan%20layanan:%20${layanan}.%0A%0ADeskripsi:%0A${desk}`;
+            window.open(url, '_blank');
+            return false;
+        }
+    </script>
+
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card, .hero, header {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+
+    <div class="container" id="layanan">
+        <h2>Layanan Kami</h2>
+
+        <div class="card">
+            <h3>✏️ Jasa Pembuatan Skripsi</h3>
+            <p>Pembuatan skripsi dari Bab 1–Bab 5, revisi, dan bimbingan sampai ACC.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Jasa Pembuatan Tugas Kuliah</h3>
+            <p>Essay, makalah, power point, laporan, hingga tugas akhir.</p>
+        </div>
+
+        <div class="card">
+            <h3>📉 Jasa Penurunan Plagiasi</h3>
+            <p>Menurunkan plagiasi dengan teknik rewrite & parafrase berkualitas.</p>
+        </div>
+
+        <div class="card">
+            <h3>📖 Jasa Pembuatan Buku</h3>
+            <p>Penulisan buku dari nol, editing, layouting, hingga siap cetak.</p>
+        </div>
+    </div>
+
+    <div class="container" id="keunggulan">
+        <h2>Keunggulan Kami</h2>
+        <div class="card">
+            <ul>
+                <li>✔ Hasil rapi dan profesional</li>
+                <li>✔ Revisi gratis sesuai arahan</li>
+                <li>✔ Kerahasiaan 100% aman</li>
+                <li>✔ Harga terjangkau & fleksibel</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="kontak">
+        <p class="contact">Hubungi Kami:</p>
+        <p>WhatsApp: <b>0895383070552</b></p>
+        <p>Instagram: <b>@whyuaffandi_</b></p>
+        <p>© 2025 Jasa Pembuatan Skripsi & Buku</p>
+    </footer>
+</body>
+</html>
